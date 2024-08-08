@@ -1,1 +1,1 @@
-# competitive-programming
+### just a few competitive programming solutions of mine

@@ -15,10 +15,17 @@
 using namespace std;
 
 void solve(){
-    string s;
-    cin >> s;
-    if (s.size() <= 10) cout << s << nl;
-    else cout << s[0] << s.size()-2 << s.back() << nl;
+    int n,k,res=0;
+    cin >> n;
+    for (int i = 0; i<n; i++){
+        int sure =0;
+        for (int j = 0; j<3; j++){
+            cin >> k;
+            if (k==1) sure++;
+        }
+        if (sure >=2) res++;
+    }
+    cout << res;
 }
 
 signed main()

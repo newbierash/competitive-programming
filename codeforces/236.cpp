@@ -15,13 +15,15 @@
 using namespace std;
 
 string s;
-set<char> st;
 
 void solve(){
     getline(cin, s);
-    for (int i = 0; i<s.size(); i++) st.insert(s[i]);
-    if (st.size() % 2 == 0) cout << "CHAT WITH HER!";
-    else cout << "IGNORE HIM!";
+    if (s[0] <= 'Z') cout << s;
+    else{
+        s[0] -= 32;
+        cout << s[0];
+        for (int i = 1; i<s.size(); i++) cout << s[i];
+    }
 }
 
 signed main()

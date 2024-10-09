@@ -1,16 +1,14 @@
 #include <bits/stdc++.h>
 #define $rash$ ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-
 #define ll long long
 #define int ll
-#define nl "/n"
+#define nl '\n'
 #define vi vector<int>
-#define pb push_back
-#define f first
-#define s second
-
+#define vc vector<char>
+#define pii pair<int,int>
+#define vpii vector<p
+#define eb emplace_back
 using namespace std;
-
 
 void solve(){
     int n;

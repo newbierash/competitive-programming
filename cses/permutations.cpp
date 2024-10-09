@@ -11,14 +11,13 @@
 using namespace std;
 
 void solve(){
-    int n, s = 0;
+    int n;
     cin >> n;
-    int arr[n-1];
-    for (int i = 0; i<n-1; i++){
-        cin >> arr[i];
-        s+= arr[i];
+    if (n>=4 || n==1){
+        for (int i = 2; i<=n; i+=2) cout << i << " ";
+        for (int i = 1; i<=n; i+=2) cout << i << " ";
     }
-    cout << n * (n+1)/2 - s;
+    else cout << "NO SOLUTION";
 }
 
 signed main(){

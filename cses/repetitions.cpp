@@ -11,14 +11,20 @@
 using namespace std;
 
 void solve(){
-    int n, s = 0;
-    cin >> n;
-    int arr[n-1];
-    for (int i = 0; i<n-1; i++){
-        cin >> arr[i];
-        s+= arr[i];
+    string s;
+    cin >> s;
+    int res=1,x=1;
+    for (int i = 0; i<s.size()-1; i++){
+        if (s[i] == s[i+1]){
+            x++;
+            res = max(res,x);
+        }
+        else{
+            res = max(res,x);
+            x=1;
+        }
     }
-    cout << n * (n+1)/2 - s;
+    cout << res;
 }
 
 signed main(){
